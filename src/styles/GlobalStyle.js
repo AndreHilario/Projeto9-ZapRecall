@@ -1,3 +1,6 @@
+import { createGlobalStyle } from "styled-components";
+
+const GlobalStyle = createGlobalStyle`
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,6 +27,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
+	background-color: #FB6B6B;
 	line-height: 1;
 }
 ol, ul {
@@ -44,3 +48,6 @@ table {
 strong {
 	font-weight: bold;
 }
+`;
+
+export default GlobalStyle;

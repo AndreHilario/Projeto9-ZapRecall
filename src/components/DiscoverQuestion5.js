@@ -2,25 +2,25 @@ import styled from "styled-components";
 import ArrowTurn from "../assets/seta_virar.png";
 import cards from "../constants/cards";
 
-export default function Questions(props) {
-
-    const {newAnswer, showAnswer} = props;
+export default function DiscoverQuestion5() {
 
     return (
-        <MainContent2>
-            {cards.map((c, i) =>
-                <QuestionBack>
-                    <p>{!newAnswer ? c.question : c.answer}</p>
-                    <img src={ArrowTurn} onClick={() => showAnswer(i)} />
-                </QuestionBack>
-            )}
-        </MainContent2>
+        <MainContent5>
+            <QuestionBack5>
+                <p>{cards[4].question}</p>
+                <img src={ArrowTurn} />
+            </QuestionBack5>
+        </MainContent5>
+        
+
     );
 }
-const MainContent2 = styled.main`
+
+
+const MainContent5 = styled.main`
     font-family: 'Recursive', sans-serif;
 `
-const QuestionBack = styled.div`
+const QuestionBack5 = styled.div`
     background-color: #FFFFD4;
     width: 300px;
     min-height: 131px;

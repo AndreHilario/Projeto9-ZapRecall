@@ -8,7 +8,9 @@ import { GreenOption } from "../styles/styles";
 import { MainContent } from "../styles/styles";
 import { QuestionBack } from "../styles/styles";
 
-export default function DiscoverQuestion2() {
+export default function DiscoverQuestion2(props) {
+
+    const {endTest2} = props;
 
     const [newAnswer2, setNewAnswer2] = useState(true);
     const [showOptions, setShowOptions] = useState("");
@@ -16,11 +18,11 @@ export default function DiscoverQuestion2() {
     function showAnswer2(){
         setNewAnswer2(false);
         setShowOptions(
-        <Options>
-            <RedOption>Não lembrei</RedOption> 
-            <OrangeOption>Quase não lembrei</OrangeOption> 
-            <GreenOption>Zap!</GreenOption>
-        </Options>)
+            <Options>
+                <RedOption onClick={() => endTest2()}>Não lembrei</RedOption> 
+                <OrangeOption>Quase não lembrei</OrangeOption> 
+                <GreenOption>Zap!</GreenOption>
+            </Options>)
     }
 
     return (

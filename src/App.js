@@ -1,21 +1,15 @@
 import Header from "./constants/Header";
 import Main from "./components/Main";
-import Footer from "./components/Footer";
 import GlobalStyle from "./styles/GlobalStyle";
-import styled from "styled-components";
+import { ContainerApp } from "./styles/styles";
 
 export default function App() {
 
   return (
-    <ConatinerApp>
+    <ContainerApp>
       <GlobalStyle />
       <Header  />
       <Main />
-      <Footer />
-    </ConatinerApp>
+    </ContainerApp>
   );
-}
-
-const ConatinerApp = styled.div`
-  background-color: #FB6B6B
-`;
+};

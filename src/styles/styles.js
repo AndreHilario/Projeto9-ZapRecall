@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+export const ContainerApp = styled.div``;
+
 export const MainContent = styled.main`
     font-family: 'Recursive', sans-serif;
 `
@@ -15,11 +17,12 @@ export const QuestionFace = styled.div`
     justify-content: space-between;
     align-items: center;
     h4 {
-    color: #333333;
+    color: ${(props) => props.finished ? "#333333" : "red"};
     font-weight: 700;
     font-size: 16px;
     line-height: 19px;
     margin-left: 15px;
+    text-decoration: ${(props) => props.finished ? "none" : "line-through"};
     }
     img {
     width: 20px;
@@ -106,4 +109,24 @@ export const GreenOption = styled.button`
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
+`;
+
+export const FooterContent = styled.footer`
+    width: 100%;
+    height: 70px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    p {
+        color: #333333;
+        font-family: 'Recursive', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+    }
 `;

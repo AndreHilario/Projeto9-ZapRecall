@@ -1,53 +1,38 @@
-import styled from "styled-components";
 import ArrowTurn from "../assets/seta_virar.png";
 import cards from "../constants/cards";
+import { useState } from "react";
+import { Options } from "../styles/styles";
+import { RedOption } from "../styles/styles";
+import { OrangeOption } from "../styles/styles";
+import { GreenOption } from "../styles/styles";
+import { MainContent } from "../styles/styles";
+import { QuestionBack } from "../styles/styles";
 
-export default function Questions() {
-    console.log(cards[1].question);
+export default function DiscoverQuestion1() {
+
+    const [newAnswer, setNewAnswer] = useState(true);
+    const [showOptions, setShowOptions] = useState("");
+
+    function showAnswer() {
+        setNewAnswer(false);
+        setShowOptions(
+            <Options>
+                <RedOption>Não lembrei</RedOption>
+                <OrangeOption>Quase não lembrei</OrangeOption>
+                <GreenOption>Zap!</GreenOption>
+            </Options>)
+    }
+
     return (
-        <MainContent1>
-            <QuestionBack1>
-                <p>{cards[0].question}</p>
-                <img src={ArrowTurn} />
-            </QuestionBack1>
-        </MainContent1>
-        
+        <MainContent>
+            <QuestionBack>
+                <p>{!newAnswer ? cards[0].answer : cards[0].question}</p>
+                {newAnswer ? <img src={ArrowTurn} onClick={showAnswer} /> : ""}
+                {showOptions}
+            </QuestionBack>
+        </MainContent>
+
 
     );
-}
+};
 
-
-const MainContent1 = styled.main`
-    font-family: 'Recursive', sans-serif;
-`
-const QuestionBack1 = styled.div`
-    background-color: #FFFFD4;
-    width: 300px;
-    min-height: 131px;
-    max-height: 170px;
-    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
-    border-radius: 5px;
-    margin: 25px auto;
-
-
-    position: relative;
-    p {
-        color: #333333;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 22px;
-        margin: auto 15px;
-        word-wrap: normal;
-
-        position: absolute;
-        top: 18px;
-    }
-    img {
-        width: 30px;
-        height: 20px;
-
-        position: absolute;
-        bottom: 6px;
-        right: 15px;
-    }
-`

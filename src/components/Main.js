@@ -1,14 +1,5 @@
-
-import styled from "styled-components"
-import DiscoverQuestion1 from "./DiscoverQuestion1";
-import DiscoverQuestion2 from "./DiscoverQuestion2";
-import DiscoverQuestion3 from "./DiscoverQuestion3";
-import DiscoverQuestion4 from "./DiscoverQuestion4";
-import DiscoverQuestion5 from "./DiscoverQuestion5";
-import DiscoverQuestion6 from "./DiscoverQuestion6";
-import DiscoverQuestion7 from "./DiscoverQuestion7";
-import DiscoverQuestion8 from "./DiscoverQuestion8";
 import { useState } from "react";
+import styled from "styled-components"
 import Question1 from "./Question1";
 import Question2 from "./Question2";
 import Question3 from "./Question3";
@@ -17,6 +8,14 @@ import Question5 from "./Question5";
 import Question6 from "./Question6";
 import Question7 from "./Question7";
 import Question8 from "./Question8";
+import DiscoverQuestion1 from "./DiscoverQuestion1";
+import DiscoverQuestion2 from "./DiscoverQuestion2";
+import DiscoverQuestion3 from "./DiscoverQuestion3";
+import DiscoverQuestion4 from "./DiscoverQuestion4";
+import DiscoverQuestion5 from "./DiscoverQuestion5";
+import DiscoverQuestion6 from "./DiscoverQuestion6";
+import DiscoverQuestion7 from "./DiscoverQuestion7";
+import DiscoverQuestion8 from "./DiscoverQuestion8";
 
 export default function Main() {
 

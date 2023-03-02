@@ -1,53 +1,37 @@
-import styled from "styled-components";
 import ArrowTurn from "../assets/seta_virar.png";
 import cards from "../constants/cards";
+import { useState } from "react";
+import { Options } from "../styles/styles";
+import { RedOption } from "../styles/styles";
+import { OrangeOption } from "../styles/styles";
+import { GreenOption } from "../styles/styles";
+import { MainContent } from "../styles/styles";
+import { QuestionBack } from "../styles/styles";
 
 export default function DiscoverQuestion8() {
 
+    const [newAnswer8, setNewAnswer8] = useState(true);
+    const [showOptions, setShowOptions] = useState("");
+
+    function showAnswer8() {
+        setNewAnswer8(false);
+        setShowOptions(
+            <Options>
+                <RedOption>Não lembrei</RedOption>
+                <OrangeOption>Quase não lembrei</OrangeOption>
+                <GreenOption>Zap!</GreenOption>
+            </Options>)
+    }
+
     return (
-        <MainContent8>
-            <QuestionBack8>
-                <p>{cards[7].question}</p>
-                <img src={ArrowTurn} />
-            </QuestionBack8>
-        </MainContent8>
-        
+        <MainContent>
+            <QuestionBack>
+                <p>{!newAnswer8 ? cards[7].answer : cards[7].question}</p>
+                {newAnswer8 ? <img src={ArrowTurn} onClick={showAnswer8} /> : ""}
+                {showOptions}
+            </QuestionBack>
+        </MainContent>
+
 
     );
-}
-
-
-const MainContent8 = styled.main`
-    font-family: 'Recursive', sans-serif;
-`
-const QuestionBack8 = styled.div`
-    background-color: #FFFFD4;
-    width: 300px;
-    min-height: 131px;
-    max-height: 170px;
-    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
-    border-radius: 5px;
-    margin: 25px auto;
-
-
-    position: relative;
-    p {
-        color: #333333;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 22px;
-        margin: auto 15px;
-        word-wrap: normal;
-
-        position: absolute;
-        top: 18px;
-    }
-    img {
-        width: 30px;
-        height: 20px;
-
-        position: absolute;
-        bottom: 6px;
-        right: 15px;
-    }
-`
+};

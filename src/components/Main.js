@@ -33,8 +33,7 @@ export default function Main() {
     const [counterFinished, setCounterFinished] = useState(0);
     let finishedNumber = 0;
 
-    function endTest(value) {
-        console.log(value)
+    function endTest() {
         finishedNumber++;
         setCounterFinished(finishedNumber);
         setNewQuestion1(<Question1 />);
@@ -119,7 +118,7 @@ export default function Main() {
             {newQuestion6}
             {newQuestion7}
             {newQuestion8}
-            <Footer counterFinished={counterFinished} />
+            <Footer data-test="footer" counterFinished={counterFinished} />
         </MainContent>
     );
 };

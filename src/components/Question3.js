@@ -8,9 +8,9 @@ export default function Question3(props) {
     const {showQuestion3, endImage} = props;
 
     return (
-        <QuestionFace finished={endImage}> 
-            <h4>{items[2]}</h4>
-            <img src={endImage ? arrow : error} alt="Seta de play" onClick={showQuestion3}/>
+        <QuestionFace data-test="flashcard" finished={endImage}> 
+            <h4 data-test="flashcard-text">{items[2]}</h4>
+            <img data-test="play-btn" src={endImage ? arrow : error} alt="Seta de play" onClick={showQuestion3}/>
         </QuestionFace>
     );
 };

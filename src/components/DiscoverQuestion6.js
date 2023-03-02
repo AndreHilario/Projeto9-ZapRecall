@@ -19,17 +19,17 @@ export default function DiscoverQuestion6(props) {
         setNewAnswer6(false);
         setShowOptions(
             <Options>
-                <RedOption onClick={() => endTest6()}>Não lembrei</RedOption>
-                <OrangeOption>Quase não lembrei</OrangeOption>
-                <GreenOption>Zap!</GreenOption>
+                <RedOption data-test="no-btn" onClick={() => endTest6()}>Não lembrei</RedOption>
+                <OrangeOption data-test="partial-btn" >Quase não lembrei</OrangeOption>
+                <GreenOption data-test="zap-btn">Zap!</GreenOption>
             </Options>)
     }
 
     return (
         <MainContent>
             <QuestionBack>
-                <p>{!newAnswer6 ? cards[5].answer : cards[5].question}</p>
-                {newAnswer6 ? <img src={ArrowTurn} onClick={showAnswer6} /> : ""}
+                <p data-test="flashcard-text">{!newAnswer6 ? cards[5].answer : cards[5].question}</p>
+                {newAnswer6 ? <img data-test="turn-btn" src={ArrowTurn} onClick={showAnswer6} /> : ""}
                 {showOptions}
             </QuestionBack>
         </MainContent>

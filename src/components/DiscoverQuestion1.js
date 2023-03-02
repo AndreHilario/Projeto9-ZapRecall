@@ -19,17 +19,17 @@ export default function DiscoverQuestion1(props) {
         setNewAnswer(false);
         setShowOptions(
             <Options>
-                <RedOption onClick={() => endTest()}>Não lembrei</RedOption>
-                <OrangeOption>Quase não lembrei</OrangeOption>
-                <GreenOption>Zap!</GreenOption>
+                <RedOption data-test="no-btn" onClick={() => endTest()}>Não lembrei</RedOption>
+                <OrangeOption data-test="partial-btn">Quase não lembrei</OrangeOption>
+                <GreenOption data-test="zap-btn">Zap!</GreenOption>
             </Options>)
     };
 
     return (
         <MainContent>
             <QuestionBack>
-                <p>{!newAnswer ? cards[0].answer : cards[0].question}</p>
-                {newAnswer ? <img src={ArrowTurn} onClick={showAnswer} /> : ""}
+                <p data-test="flashcard-text">{!newAnswer ? cards[0].answer : cards[0].question}</p>
+                {newAnswer ? <img data-test="turn-btn" src={ArrowTurn} onClick={showAnswer} /> : ""}
                 {showOptions}
             </QuestionBack>
         </MainContent>

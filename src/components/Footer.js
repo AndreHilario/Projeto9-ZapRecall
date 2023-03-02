@@ -5,7 +5,7 @@ export default function Footer(props) {
     const {counterFinished} = props;
     
     return (
-        <FooterContent>
+        <FooterContent data-test="footer">
             <p>{counterFinished}/{cards.length} CONCLUÍDOS</p>
         </FooterContent>
     );

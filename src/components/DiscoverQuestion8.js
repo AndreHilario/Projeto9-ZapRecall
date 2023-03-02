@@ -27,7 +27,7 @@ export default function DiscoverQuestion8(props) {
 
     return (
         <MainContent>
-            <QuestionBack>
+            <QuestionBack data-test="flashcard">
                 <p data-test="flashcard-text">{!newAnswer8 ? cards[7].answer : cards[7].question}</p>
                 {newAnswer8 ? <img data-test="turn-btn" src={ArrowTurn} onClick={showAnswer8} /> : ""}
                 {showOptions}

@@ -118,7 +118,7 @@ export default function Main() {
             {newQuestion6}
             {newQuestion7}
             {newQuestion8}
-            <Footer data-test="footer" counterFinished={counterFinished} />
+            <Footer counterFinished={counterFinished} />
         </MainContent>
     );
 };

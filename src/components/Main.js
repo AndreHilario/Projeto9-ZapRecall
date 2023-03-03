@@ -29,194 +29,30 @@ export default function Main() {
     const [counterFinished, setCounterFinished] = useState(0);
     let finishedNumber = 0;
 
-    function endTest() {
-        const erro = "error";
-        setImage(erro);
+    function updateFinishedNumber() {
         finishedNumber++;
         setCounterFinished(finishedNumber);
-        const newQuestion = <Question1 image={erro} />;
-        setNewQuestion1(newQuestion);
-    }
-    function endTest2() {
-        const erro = "error";
-        setImage(erro);
-        finishedNumber++;
-        setCounterFinished(finishedNumber);
-        const newQuestion = <Question2 image={erro} />;
-        setNewQuestion2(newQuestion);
-    }
-    function endTest3() {
-        const erro = "error";
-        setImage(erro);
-        finishedNumber++;
-        setCounterFinished(finishedNumber);
-        const newQuestion = <Question3 image={erro} />;
-        setNewQuestion3(newQuestion);
-    }
-    function endTest4() {
-        const erro = "error";
-        setImage(erro);
-        finishedNumber++;
-        setCounterFinished(finishedNumber);
-        const newQuestion = <Question4 image={erro} />;
-        setNewQuestion4(newQuestion);
-    }
-    function endTest5() {
-        const erro = "error";
-        setImage(erro);
-        finishedNumber++;
-        setCounterFinished(finishedNumber);
-        const newQuestion = <Question5 image={erro} />;
-        setNewQuestion5(newQuestion);
-    }
-    function endTest6() {
-        const erro = "error";
-        setImage(erro);
-        finishedNumber++;
-        setCounterFinished(finishedNumber);
-        const newQuestion = <Question6 image={erro} />;
-        setNewQuestion6(newQuestion);
-    }
-    function endTest7() {
-        const erro = "error";
-        setImage(erro);
-        finishedNumber++;
-        setCounterFinished(finishedNumber);
-        const newQuestion = <Question7 image={erro} />;
-        setNewQuestion7(newQuestion);
-    }
-    function endAlmost() {
-        const medium = "almost";
-        setImage(medium);
-        finishedNumber++;
-        setCounterFinished(finishedNumber);
-        const newQuestion = <Question1 image={medium} />;
-        setNewQuestion1(newQuestion);
-    }
-    function endAlmost2() {
-        const medium = "almost";
-        setImage(medium);
-        finishedNumber++;
-        setCounterFinished(finishedNumber);
-        const newQuestion = <Question2 image={medium} />;
-        setNewQuestion2(newQuestion);
-    }
-    function endAlmost3() {
-        const medium = "almost";
-        setImage(medium);
-        finishedNumber++;
-        setCounterFinished(finishedNumber);
-        const newQuestion = <Question3 image={medium} />;
-        setNewQuestion3(newQuestion);
-    }
-    function endAlmost4() {
-        const medium = "almost";
-        setImage(medium);
-        finishedNumber++;
-        setCounterFinished(finishedNumber);
-        const newQuestion = <Question4 image={medium} />;
-        setNewQuestion4(newQuestion);
-    }
-    function endAlmost5() {
-        const medium = "almost";
-        setImage(medium);
-        finishedNumber++;
-        setCounterFinished(finishedNumber);
-        const newQuestion = <Question5 image={medium} />;
-        setNewQuestion5(newQuestion);
-    }
-    function endAlmost6() {
-        const medium = "almost";
-        setImage(medium);
-        finishedNumber++;
-        setCounterFinished(finishedNumber);
-        const newQuestion = <Question6 image={medium} />;
-        setNewQuestion6(newQuestion);
-    }
-    function endAlmost7() {
-        const medium = "almost";
-        setImage(medium);
-        finishedNumber++;
-        setCounterFinished(finishedNumber);
-        const newQuestion = <Question7 image={medium} />;
-        setNewQuestion7(newQuestion);
-    }
-    function endRemember() {
-        const perfect = "correct";
-        setImage(perfect);
-        finishedNumber++;
-        setCounterFinished(finishedNumber);
-        const newQuestion = <Question1 image={perfect} />;
-        setNewQuestion1(newQuestion);
-    }
-    function endRemember2() {
-        const perfect = "correct";
-        setImage(perfect);
-        finishedNumber++;
-        setCounterFinished(finishedNumber);
-        const newQuestion = <Question2 image={perfect} />;
-        setNewQuestion2(newQuestion);
-    }
-    function endRemember3() {
-        const perfect = "correct";
-        setImage(perfect);
-        finishedNumber++;
-        setCounterFinished(finishedNumber);
-        const newQuestion = <Question3 image={perfect} />;
-        setNewQuestion3(newQuestion);
-    }
-    function endRemember4() {
-        const perfect = "correct";
-        setImage(perfect);
-        finishedNumber++;
-        setCounterFinished(finishedNumber);
-        const newQuestion = <Question4 image={perfect} />;
-        setNewQuestion4(newQuestion);
-    }
-    function endRemember5() {
-        const perfect = "correct";
-        setImage(perfect);
-        finishedNumber++;
-        setCounterFinished(finishedNumber);
-        const newQuestion = <Question5 image={perfect} />;
-        setNewQuestion5(newQuestion);
-    }
-    function endRemember6() {
-        const perfect = "correct";
-        setImage(perfect);
-        finishedNumber++;
-        setCounterFinished(finishedNumber);
-        const newQuestion = <Question6 image={perfect} />;
-        setNewQuestion6(newQuestion);
-    }
-    function endRemember7() {
-        const perfect = "correct";
-        setImage(perfect);
-        finishedNumber++;
-        setCounterFinished(finishedNumber);
-        const newQuestion = <Question7 image={perfect} />;
-        setNewQuestion7(newQuestion);
     }
     function showQuestion() {
-        setNewQuestion1(<DiscoverQuestion1 endTest={endTest} endAlmost={endAlmost} endRemember={endRemember} />);
+        setNewQuestion1(<DiscoverQuestion1 updateFinishedNumber={updateFinishedNumber} setNewQuestion1={setNewQuestion1} setImage={setImage} />);
     }
     function showQuestion2() {
-        setNewQuestion2(<DiscoverQuestion2 endTest2={endTest2} endAlmost2={endAlmost2} endRemember2={endRemember2} />);
+        setNewQuestion2(<DiscoverQuestion2 updateFinishedNumber={updateFinishedNumber} setNewQuestion2={setNewQuestion2} setImage={setImage} />);
     }
     function showQuestion3() {
-        setNewQuestion3(<DiscoverQuestion3 endTest3={endTest3} endAlmost3={endAlmost3} endRemember3={endRemember3} />);
+        setNewQuestion3(<DiscoverQuestion3 updateFinishedNumber={updateFinishedNumber} setNewQuestion3={setNewQuestion3} setImage={setImage} />);
     }
     function showQuestion4() {
-        setNewQuestion4(<DiscoverQuestion4 endTest4={endTest4} endAlmost4={endAlmost4} endRemember4={endRemember4} />);
+        setNewQuestion4(<DiscoverQuestion4 updateFinishedNumber={updateFinishedNumber} setNewQuestion4={setNewQuestion4} setImage={setImage} />);
     }
     function showQuestion5() {
-        setNewQuestion5(<DiscoverQuestion5 endTest5={endTest5} endAlmost5={endAlmost5} endRemember5={endRemember5} />);
+        setNewQuestion5(<DiscoverQuestion5 updateFinishedNumber={updateFinishedNumber} setNewQuestion5={setNewQuestion5} setImage={setImage} />);
     }
     function showQuestion6() {
-        setNewQuestion6(<DiscoverQuestion6 endTest6={endTest6} endAlmost6={endAlmost6} endRemember6={endRemember6} />);
+        setNewQuestion6(<DiscoverQuestion6 updateFinishedNumber={updateFinishedNumber} setNewQuestion6={setNewQuestion6} setImage={setImage} />);
     }
     function showQuestion7() {
-        setNewQuestion7(<DiscoverQuestion7 endTest7={endTest7} endAlmost7={endAlmost7} endRemember7={endRemember7} />);
+        setNewQuestion7(<DiscoverQuestion7 updateFinishedNumber={updateFinishedNumber} setNewQuestion7={setNewQuestion7} setImage={setImage} />);
     }
 
     return (

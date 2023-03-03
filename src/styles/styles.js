@@ -3,7 +3,25 @@ import styled from "styled-components";
 export const ContainerApp = styled.div`
     overflow-y: scroll;
 `;
-
+export const HeaderContent = styled.header`
+    margin: 42px auto;
+    width: 256px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    img {
+        width: 52px;
+        height: 60px;
+        margin-right: 20px;
+    }
+    h1 {
+        color: #FFFFFF;
+        font-family: 'Righteous', cursive;
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 44px;
+    }
+`;
 export const MainContent = styled.main`
     font-family: 'Recursive', sans-serif;
 `;

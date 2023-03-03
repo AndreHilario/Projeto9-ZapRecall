@@ -7,10 +7,11 @@ import { OrangeOption } from "../styles/styles";
 import { GreenOption } from "../styles/styles";
 import { MainContent } from "../styles/styles";
 import { QuestionBack } from "../styles/styles";
+import Question5 from "./Question5";
 
 export default function DiscoverQuestion5(props) {
 
-    const {endTest5, endAlmost5, endRemember5} = props;
+    const { updateFinishedNumber, setNewQuestion5, setImage } = props;
 
     const [newAnswer5, setNewAnswer5] = useState(true);
     const [showOptions, setShowOptions] = useState("");
@@ -23,6 +24,27 @@ export default function DiscoverQuestion5(props) {
                 <OrangeOption data-test="partial-btn" onClick={() => endAlmost5()}>Quase não lembrei</OrangeOption>
                 <GreenOption data-test="zap-btn" onClick={() => endRemember5()}>Zap!</GreenOption>
             </Options>)
+    }
+    function endTest5() {
+        const erro = "error";
+        setImage(erro);
+        updateFinishedNumber();
+        const newQuestion = <Question5 image={erro} />;
+        setNewQuestion5(newQuestion);
+    }
+    function endAlmost5() {
+        const medium = "almost";
+        setImage(medium);
+        updateFinishedNumber();
+        const newQuestion = <Question5 image={medium} />;
+        setNewQuestion5(newQuestion);
+    }
+    function endRemember5() {
+        const perfect = "correct";
+        setImage(perfect);
+        updateFinishedNumber();
+        const newQuestion = <Question5 image={perfect} />;
+        setNewQuestion5(newQuestion);
     }
 
     return (

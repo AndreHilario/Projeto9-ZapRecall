@@ -7,24 +7,45 @@ import { OrangeOption } from "../styles/styles";
 import { GreenOption } from "../styles/styles";
 import { MainContent } from "../styles/styles";
 import { QuestionBack } from "../styles/styles";
+import Question4 from "./Question4";
 
 export default function DiscoverQuestion4(props) {
 
-    const {endTest4 , endAlmost4, endRemember4} = props;
+    const { updateFinishedNumber, setNewQuestion4, setImage } = props;
 
     const [newAnswer4, setNewAnswer4] = useState(true);
     const [showOptions, setShowOptions] = useState("");
-    
-    function showAnswer4(){
+
+    function showAnswer4() {
         setNewAnswer4(false);
         setShowOptions(
             <Options>
-                <RedOption data-test="no-btn" onClick={() => endTest4()}>Não lembrei</RedOption> 
-                <OrangeOption data-test="partial-btn" onClick={() => endAlmost4()}>Quase não lembrei</OrangeOption> 
+                <RedOption data-test="no-btn" onClick={() => endTest4()}>Não lembrei</RedOption>
+                <OrangeOption data-test="partial-btn" onClick={() => endAlmost4()}>Quase não lembrei</OrangeOption>
                 <GreenOption data-test="zap-btn" onClick={() => endRemember4()}>Zap!</GreenOption>
             </Options>)
     }
-
+    function endTest4() {
+        const erro = "error";
+        setImage(erro);
+        updateFinishedNumber();
+        const newQuestion = <Question4 image={erro} />;
+        setNewQuestion4(newQuestion);
+    }
+    function endAlmost4() {
+        const medium = "almost";
+        setImage(medium);
+        updateFinishedNumber();
+        const newQuestion = <Question4 image={medium} />;
+        setNewQuestion4(newQuestion);
+    }
+    function endRemember4() {
+        const perfect = "correct";
+        setImage(perfect);
+        updateFinishedNumber();
+        const newQuestion = <Question4 image={perfect} />;
+        setNewQuestion4(newQuestion);
+    }
     return (
         <MainContent>
             <QuestionBack data-test="flashcard">
@@ -33,7 +54,7 @@ export default function DiscoverQuestion4(props) {
                 {showOptions}
             </QuestionBack>
         </MainContent>
-        
+
 
     );
 };

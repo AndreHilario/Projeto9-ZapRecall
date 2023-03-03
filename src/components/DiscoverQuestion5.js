@@ -10,7 +10,7 @@ import { QuestionBack } from "../styles/styles";
 
 export default function DiscoverQuestion5(props) {
 
-    const {endTest5} = props;
+    const {endTest5, endAlmost5, endRemember5} = props;
 
     const [newAnswer5, setNewAnswer5] = useState(true);
     const [showOptions, setShowOptions] = useState("");
@@ -20,8 +20,8 @@ export default function DiscoverQuestion5(props) {
         setShowOptions(
             <Options>
                 <RedOption data-test="no-btn" onClick={() => endTest5()}>Não lembrei</RedOption>
-                <OrangeOption data-test="partial-btn">Quase não lembrei</OrangeOption>
-                <GreenOption data-test="zap-btn">Zap!</GreenOption>
+                <OrangeOption data-test="partial-btn" onClick={() => endAlmost5()}>Quase não lembrei</OrangeOption>
+                <GreenOption data-test="zap-btn" onClick={() => endRemember5()}>Zap!</GreenOption>
             </Options>)
     }
 

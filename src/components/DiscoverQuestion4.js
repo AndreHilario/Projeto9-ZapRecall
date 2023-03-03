@@ -10,7 +10,7 @@ import { QuestionBack } from "../styles/styles";
 
 export default function DiscoverQuestion4(props) {
 
-    const {endTest4} = props;
+    const {endTest4 , endAlmost4, endRemember4} = props;
 
     const [newAnswer4, setNewAnswer4] = useState(true);
     const [showOptions, setShowOptions] = useState("");
@@ -20,8 +20,8 @@ export default function DiscoverQuestion4(props) {
         setShowOptions(
             <Options>
                 <RedOption data-test="no-btn" onClick={() => endTest4()}>Não lembrei</RedOption> 
-                <OrangeOption data-test="partial-btn">Quase não lembrei</OrangeOption> 
-                <GreenOption data-test="zap-btn">Zap!</GreenOption>
+                <OrangeOption data-test="partial-btn" onClick={() => endAlmost4}>Quase não lembrei</OrangeOption> 
+                <GreenOption data-test="zap-btn" onClick={() => endRemember4()}>Zap!</GreenOption>
             </Options>)
     }
 

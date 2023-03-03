@@ -17,12 +17,12 @@ export const QuestionFace = styled.div`
     justify-content: space-between;
     align-items: center;
     h4 {
-    color: ${(props) => props.finished ? "#333333" : "red"};
+    color: ${(props) => !props.finished ? "red" : !props.orange ? "orange" : "#333333"};
     font-weight: 700;
     font-size: 16px;
     line-height: 19px;
     margin-left: 15px;
-    text-decoration: ${(props) => props.finished ? "none" : "line-through"};
+    text-decoration: ${(props) =>  props.finished ? "none" : "line-through"};
     }
     img {
     width: 20px;

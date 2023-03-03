@@ -8,7 +8,7 @@ export default function App() {
   return (
     <ContainerApp>
       <GlobalStyle />
-      <Header  />
+      <Header />
       <Main />
     </ContainerApp>
   );

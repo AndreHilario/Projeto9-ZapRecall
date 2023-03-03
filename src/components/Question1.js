@@ -5,13 +5,12 @@ import almost from "../assets/icone_quase.png";
 import error from "../assets/icone_erro.png";
 import correct from "../assets/icone_certo.png";
 
-
 export default function Question1(props) {
 
     const { showQuestion, image } = props;
-    
+
     return (
-        <QuestionFace data-test="flashcard" red={image === "error"} orange={image === "almost"} green={image === "correct"} end={image === ""}>
+        <QuestionFace data-test="flashcard" red={image === "error"} orange={image === "almost"} green={image === "correct"} endTest={image === ""}>
             <h4 data-test="flashcard-text">{items[0]}</h4>
             {image === "" && <img data-test="play-btn" src={arrow} alt="Seta de play" onClick={() => showQuestion()} />}
             {image === "error" && <img data-test="no-icon" src={error} alt="Imagem de erro" />}

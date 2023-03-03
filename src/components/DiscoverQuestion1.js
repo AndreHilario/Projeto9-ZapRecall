@@ -35,14 +35,14 @@ export default function DiscoverQuestion1(props) {
     function endAlmost() {
         const medium = "almost";
         setImage(medium);
-        updateFinishedNumber()
+        updateFinishedNumber();
         const newQuestion = <Question1 image={medium} />;
         setNewQuestion1(newQuestion);
     }
     function endRemember() {
         const perfect = "correct";
         setImage(perfect);
-        updateFinishedNumber()
+        updateFinishedNumber();
         const newQuestion = <Question1 image={perfect} />;
         setNewQuestion1(newQuestion);
     }
@@ -50,7 +50,7 @@ export default function DiscoverQuestion1(props) {
         <MainContent>
             <QuestionBack data-test="flashcard">
                 <p data-test="flashcard-text">{!newAnswer ? cards[0].answer : cards[0].question}</p>
-                {newAnswer ? <img data-test="turn-btn" src={ArrowTurn} onClick={showAnswer} /> : ""}
+                {newAnswer ? <img data-test="turn-btn" src={ArrowTurn} alt="Seta de virar" onClick={showAnswer} /> : ""}
                 {showOptions}
             </QuestionBack>
         </MainContent>

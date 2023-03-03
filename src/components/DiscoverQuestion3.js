@@ -15,7 +15,7 @@ export default function DiscoverQuestion3(props) {
 
     const [newAnswer3, setNewAnswer3] = useState(true);
     const [showOptions, setShowOptions] = useState("");
-    
+
     function showAnswer3() {
         setNewAnswer3(false);
         setShowOptions(
@@ -51,7 +51,7 @@ export default function DiscoverQuestion3(props) {
         <MainContent>
             <QuestionBack data-test="flashcard">
                 <p data-test="flashcard-text">{!newAnswer3 ? cards[2].answer : cards[2].question}</p>
-                {newAnswer3 ? <img data-test="turn-btn" src={ArrowTurn} onClick={showAnswer3} /> : ""}
+                {newAnswer3 ? <img data-test="turn-btn" src={ArrowTurn} alt="Seta de virar" onClick={showAnswer3} /> : ""}
                 {showOptions}
             </QuestionBack>
         </MainContent>

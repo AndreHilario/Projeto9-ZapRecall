@@ -51,7 +51,7 @@ export default function DiscoverQuestion2(props) {
         <MainContent>
             <QuestionBack data-test="flashcard">
                 <p data-test="flashcard-text">{!newAnswer2 ? cards[1].answer : cards[1].question}</p>
-                {newAnswer2 ? <img data-test="turn-btn" src={ArrowTurn} onClick={showAnswer2} /> : ""}
+                {newAnswer2 ? <img data-test="turn-btn" src={ArrowTurn} alt ="Seta de virar" onClick={showAnswer2} /> : ""}
                 {showOptions}
             </QuestionBack>
         </MainContent>

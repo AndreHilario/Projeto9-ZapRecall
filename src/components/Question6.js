@@ -15,9 +15,9 @@ export default function Question6(props) {
         <QuestionFace data-test="flashcard">
             <h4 data-test="flashcard-text">{items[5]}</h4>
             {image === "" && <img data-test="play-btn" src={arrow} alt="Seta de play" onClick={() => showQuestion6()} />}
-            {image === "error" && <img src={error} alt="Imagem de erro" />}
-            {image === "almost" && <img src={almost} alt="Imagem de quase lembrou" />}
-            {image === "correct" && <img src={correct} alt="Imagem de correto" />}
+            {image === "error" && <img data-test="no-icon" src={error} alt="Imagem de erro" />}
+            {image === "almost" && <img data-test="partial-icon" src={almost} alt="Imagem de quase lembrou" />}
+            {image === "correct" && <img data-test="zap-icon" src={correct} alt="Imagem de correto" />}
         </QuestionFace>
     );
 };

@@ -20,7 +20,7 @@ export default function DiscoverQuestion4(props) {
         setShowOptions(
             <Options>
                 <RedOption data-test="no-btn" onClick={() => endTest4()}>Não lembrei</RedOption> 
-                <OrangeOption data-test="partial-btn" onClick={() => endAlmost4}>Quase não lembrei</OrangeOption> 
+                <OrangeOption data-test="partial-btn" onClick={() => endAlmost4()}>Quase não lembrei</OrangeOption> 
                 <GreenOption data-test="zap-btn" onClick={() => endRemember4()}>Zap!</GreenOption>
             </Options>)
     }

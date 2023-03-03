@@ -10,7 +10,7 @@ export default function Question2(props) {
     const { showQuestion2, image } = props;
 
     return (
-        <QuestionFace data-test="flashcard">
+        <QuestionFace data-test="flashcard"red={image === "error"} orange={image === "almost"} green={image === "correct"} end={image === ""}>
             <h4 data-test="flashcard-text">{items[1]}</h4>
             {image === "" && <img data-test="play-btn" src={arrow} alt="Seta de play" onClick={() => showQuestion2()} />}
             {image === "error" && <img data-test="no-icon" src={error} alt="Imagem de erro" />}

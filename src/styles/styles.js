@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
-export const ContainerApp = styled.div``;
+export const ContainerApp = styled.div`
+    overflow-y: scroll;
+`;
 
 export const MainContent = styled.main`
     font-family: 'Recursive', sans-serif;
@@ -17,12 +19,12 @@ export const QuestionFace = styled.div`
     justify-content: space-between;
     align-items: center;
     h4 {
-    color: ${(props) => !props.finished ? "red" : !props.orange ? "orange" : "#333333"};
+    color: ${(props) => props.red? "#FF3030" : props.orange ? "#FF922E" : props.green ? "#2FBE34" : "#333333"};
     font-weight: 700;
     font-size: 16px;
     line-height: 19px;
     margin-left: 15px;
-    text-decoration: ${(props) =>  props.finished ? "none" : "line-through"};
+    text-decoration: ${(props) =>  props.end ? "none" : "line-through"};
     }
     img {
     width: 20px;
@@ -35,8 +37,7 @@ export const QuestionFace = styled.div`
 export const QuestionBack = styled.div`
     background-color: #FFFFD4;
     width: 300px;
-    min-height: 131px;
-    max-height: 170px;
+    min-height: 170px;
     box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
     margin: 25px auto;

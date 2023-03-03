@@ -35,7 +35,7 @@ export default function Main() {
     let finishedNumber = 0;
 
     function endTest() {
-        let erro = "error";
+        const erro = "error";
         setImage(erro);
         finishedNumber++;
         setCounterFinished(finishedNumber);
@@ -43,7 +43,7 @@ export default function Main() {
         setNewQuestion1(newQuestion);
     }
     function endTest2() {
-        let erro = "error";
+        const erro = "error";
         setImage(erro);
         finishedNumber++;
         setCounterFinished(finishedNumber);
@@ -51,7 +51,7 @@ export default function Main() {
         setNewQuestion2(newQuestion);
     }
     function endTest3() {
-        let erro = "error";
+        const erro = "error";
         setImage(erro);
         finishedNumber++;
         setCounterFinished(finishedNumber);
@@ -59,7 +59,7 @@ export default function Main() {
         setNewQuestion3(newQuestion);
     }
     function endTest4() {
-        let erro = "error";
+        const erro = "error";
         setImage(erro);
         finishedNumber++;
         setCounterFinished(finishedNumber);
@@ -67,7 +67,7 @@ export default function Main() {
         setNewQuestion4(newQuestion);
     }
     function endTest5() {
-        let erro = "error";
+        const erro = "error";
         setImage(erro);
         finishedNumber++;
         setCounterFinished(finishedNumber);
@@ -75,7 +75,7 @@ export default function Main() {
         setNewQuestion5(newQuestion);
     }
     function endTest6() {
-        let erro = "error";
+        const erro = "error";
         setImage(erro);
         finishedNumber++;
         setCounterFinished(finishedNumber);
@@ -83,7 +83,7 @@ export default function Main() {
         setNewQuestion6(newQuestion);
     }
     function endTest7() {
-        let erro = "error";
+        const erro = "error";
         setImage(erro);
         finishedNumber++;
         setCounterFinished(finishedNumber);
@@ -91,7 +91,7 @@ export default function Main() {
         setNewQuestion7(newQuestion);
     }
     function endTest8() {
-        let erro = "error";
+        const erro = "error";
         setImage(erro);
         finishedNumber++;
         setCounterFinished(finishedNumber);
@@ -100,7 +100,7 @@ export default function Main() {
     }
 
     function endAlmost() {
-        let medium = "almost";
+        const medium = "almost";
         setImage(medium);
         finishedNumber++;
         setCounterFinished(finishedNumber);
@@ -108,7 +108,7 @@ export default function Main() {
         setNewQuestion1(newQuestion);
     }
     function endAlmost2() {
-        let medium = "almost";
+        const medium = "almost";
         setImage(medium);
         finishedNumber++;
         setCounterFinished(finishedNumber);
@@ -116,7 +116,7 @@ export default function Main() {
         setNewQuestion2(newQuestion);
     }
     function endAlmost3() {
-        let medium = "almost";
+        const medium = "almost";
         setImage(medium);
         finishedNumber++;
         setCounterFinished(finishedNumber);
@@ -124,7 +124,7 @@ export default function Main() {
         setNewQuestion3(newQuestion);
     }
     function endAlmost4() {
-        let medium = "almost";
+        const medium = "almost";
         setImage(medium);
         finishedNumber++;
         setCounterFinished(finishedNumber);
@@ -132,7 +132,7 @@ export default function Main() {
         setNewQuestion4(newQuestion);
     }
     function endAlmost5() {
-        let medium = "almost";
+        const medium = "almost";
         setImage(medium);
         finishedNumber++;
         setCounterFinished(finishedNumber);
@@ -140,7 +140,7 @@ export default function Main() {
         setNewQuestion5(newQuestion);
     }
     function endAlmost6() {
-        let medium = "almost";
+        const medium = "almost";
         setImage(medium);
         finishedNumber++;
         setCounterFinished(finishedNumber);
@@ -148,7 +148,7 @@ export default function Main() {
         setNewQuestion6(newQuestion);
     }
     function endAlmost7() {
-        let medium = "almost";
+        const medium = "almost";
         setImage(medium);
         finishedNumber++;
         setCounterFinished(finishedNumber);
@@ -156,7 +156,7 @@ export default function Main() {
         setNewQuestion7(newQuestion);
     }
     function endAlmost8() {
-        let medium = "almost";
+        const medium = "almost";
         setImage(medium);
         finishedNumber++;
         setCounterFinished(finishedNumber);
@@ -164,7 +164,7 @@ export default function Main() {
         setNewQuestion8(newQuestion);
     }
     function endRemember() {
-        let perfect = "correct";
+        const perfect = "correct";
         setImage(perfect);
         finishedNumber++;
         setCounterFinished(finishedNumber);
@@ -172,7 +172,7 @@ export default function Main() {
         setNewQuestion1(newQuestion);
     }
     function endRemember2() {
-        let perfect = "correct";
+        const perfect = "correct";
         setImage(perfect);
         finishedNumber++;
         setCounterFinished(finishedNumber);
@@ -180,7 +180,7 @@ export default function Main() {
         setNewQuestion2(newQuestion);
     }
     function endRemember3() {
-        let perfect = "correct";
+        const perfect = "correct";
         setImage(perfect);
         finishedNumber++;
         setCounterFinished(finishedNumber);
@@ -188,7 +188,7 @@ export default function Main() {
         setNewQuestion3(newQuestion);
     }
     function endRemember4() {
-        let perfect = "correct";
+        const perfect = "correct";
         setImage(perfect);
         finishedNumber++;
         setCounterFinished(finishedNumber);
@@ -196,7 +196,7 @@ export default function Main() {
         setNewQuestion4(newQuestion);
     }
     function endRemember5() {
-        let perfect = "correct";
+        const perfect = "correct";
         setImage(perfect);
         finishedNumber++;
         setCounterFinished(finishedNumber);
@@ -204,7 +204,7 @@ export default function Main() {
         setNewQuestion5(newQuestion);
     }
     function endRemember6() {
-        let perfect = "correct";
+        const perfect = "correct";
         setImage(perfect);
         finishedNumber++;
         setCounterFinished(finishedNumber);
@@ -212,7 +212,7 @@ export default function Main() {
         setNewQuestion6(newQuestion);
     }
     function endRemember7() {
-        let perfect = "correct";
+        const perfect = "correct";
         setImage(perfect);
         finishedNumber++;
         setCounterFinished(finishedNumber);
@@ -220,7 +220,7 @@ export default function Main() {
         setNewQuestion7(newQuestion);
     }
     function endRemember8() {
-        let perfect = "correct";
+        const perfect = "correct";
         setImage(perfect);
         finishedNumber++;
         setCounterFinished(finishedNumber);
@@ -228,28 +228,28 @@ export default function Main() {
         setNewQuestion8(newQuestion);
     }
     function showQuestion() {
-        setNewQuestion1(<DiscoverQuestion1 endTest={endTest} endAlmost={endAlmost} endRemember={endRemember} />)
+        setNewQuestion1(<DiscoverQuestion1 endTest={endTest} endAlmost={endAlmost} endRemember={endRemember} />);
     }
     function showQuestion2() {
-        setNewQuestion2(<DiscoverQuestion2 endTest2={endTest2} endAlmost2={endAlmost2} endRemember2={endRemember2} />)
+        setNewQuestion2(<DiscoverQuestion2 endTest2={endTest2} endAlmost2={endAlmost2} endRemember2={endRemember2} />);
     }
     function showQuestion3() {
-        setNewQuestion3(<DiscoverQuestion3 endTest3={endTest3} endAlmost3={endAlmost3} endRemember3={endRemember3} />)
+        setNewQuestion3(<DiscoverQuestion3 endTest3={endTest3} endAlmost3={endAlmost3} endRemember3={endRemember3} />);
     }
     function showQuestion4() {
-        setNewQuestion4(<DiscoverQuestion4 endTest4={endTest4} endAlmost4={endAlmost4} endRemember4={endRemember4} />)
+        setNewQuestion4(<DiscoverQuestion4 endTest4={endTest4} endAlmost4={endAlmost4} endRemember4={endRemember4} />);
     }
     function showQuestion5() {
-        setNewQuestion5(<DiscoverQuestion5 endTest5={endTest5} endAlmost5={endAlmost5} endRemember5={endRemember5} />)
+        setNewQuestion5(<DiscoverQuestion5 endTest5={endTest5} endAlmost5={endAlmost5} endRemember5={endRemember5} />);
     }
     function showQuestion6() {
-        setNewQuestion6(<DiscoverQuestion6 endTest6={endTest6} endAlmost6={endAlmost6} endRemember6={endRemember6} />)
+        setNewQuestion6(<DiscoverQuestion6 endTest6={endTest6} endAlmost6={endAlmost6} endRemember6={endRemember6} />);
     }
     function showQuestion7() {
-        setNewQuestion7(<DiscoverQuestion7 endTest7={endTest7} endAlmost7={endAlmost7} endRemember7={endRemember7} />)
+        setNewQuestion7(<DiscoverQuestion7 endTest7={endTest7} endAlmost7={endAlmost7} endRemember7={endRemember7} />);
     }
     function showQuestion8() {
-        setNewQuestion8(<DiscoverQuestion8 endTest8={endTest8} endAlmost8={endAlmost8} endRemember8={endRemember8} />)
+        setNewQuestion8(<DiscoverQuestion8 endTest8={endTest8} endAlmost8={endAlmost8} endRemember8={endRemember8} />);
     }
 
     return (
@@ -265,4 +265,4 @@ export default function Main() {
             <Footer counterFinished={counterFinished} />
         </MainContent>
     );
-};
+}

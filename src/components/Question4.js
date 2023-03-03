@@ -18,4 +18,4 @@ export default function Question4(props) {
             {image === "correct" && <img data-test="zap-icon" src={correct} alt="Imagem de correto" />}
         </QuestionFace>
     );
-};
+}

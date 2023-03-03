@@ -1,9 +1,9 @@
-import items from "../constants/items"
+import items from "../constants/items";
 import { QuestionFace } from "../styles/styles";
 import arrow from "../assets/seta_play.png";
-import error from "../assets/icone_erro.png"
-import almost from "../assets/icone_quase.png"
-import correct from "../assets/icone_certo.png"
+import error from "../assets/icone_erro.png";
+import almost from "../assets/icone_quase.png";
+import correct from "../assets/icone_certo.png";
 
 export default function Question2(props) {
 
@@ -18,4 +18,4 @@ export default function Question2(props) {
             {image === "correct" && <img data-test="zap-icon" src={correct} alt="Imagem de correto" />}
         </QuestionFace>
     );
-};
+}

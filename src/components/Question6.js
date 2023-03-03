@@ -1,4 +1,4 @@
-import items from "../constants/items"
+import items from "../constants/items";
 import { QuestionFace } from "../styles/styles";
 import arrow from "../assets/seta_play.png";
 import error from "../assets/icone_erro.png";
@@ -8,8 +8,7 @@ import correct from "../assets/icone_certo.png";
 
 export default function Question6(props) {
 
-    const { showQuestion6, image } = props
-    
+    const { showQuestion6, image } = props;
 
     return (
         <QuestionFace data-test="flashcard" red={image === "error"} orange={image === "almost"} green={image === "correct"} end={image === ""}>
@@ -20,4 +19,4 @@ export default function Question6(props) {
             {image === "correct" && <img data-test="zap-icon" src={correct} alt="Imagem de correto" />}
         </QuestionFace>
     );
-};
+}

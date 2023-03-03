@@ -6,7 +6,7 @@ export const ContainerApp = styled.div`
 
 export const MainContent = styled.main`
     font-family: 'Recursive', sans-serif;
-`
+`;
 export const QuestionFace = styled.div`
     background-color: #FFFFFF;
     width: 300px;
@@ -33,11 +33,11 @@ export const QuestionFace = styled.div`
 
     }
 
-`
+`;
 export const QuestionBack = styled.div`
     background-color: #FFFFD4;
     width: 300px;
-    min-height: 170px;
+    min-height: 150px;
     box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
     margin: 25px auto;
@@ -63,7 +63,7 @@ export const QuestionBack = styled.div`
         bottom: 6px;
         right: 15px;
     }
-`
+`;
 export const Options = styled.div`
     width: 270px;
     height: 37px;

@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const ContainerApp = styled.div`
     overflow-y: scroll;
+    height: 1300px;
 `;
 export const HeaderContent = styled.header`
     margin: 42px auto;
@@ -59,6 +60,7 @@ export const QuestionBack = styled.div`
     box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
     margin: 25px auto;
+    padding-bottom: 25px;
 
 
     position: relative;
@@ -74,8 +76,8 @@ export const QuestionBack = styled.div`
         top: 18px;
     }
     img {
-        width: 30px;
-        height: 20px;
+        width: 23px;
+        height: 23px;
 
         position: absolute;
         bottom: 6px;
@@ -135,6 +137,7 @@ export const FooterContent = styled.footer`
     height: 70px;
     background-color: #FFFFFF;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 

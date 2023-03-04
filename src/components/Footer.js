@@ -1,5 +1,6 @@
 import { FooterContent } from "../styles/styles";
 import cards from "../constants/cards";
+
 export default function Footer(props) {
 
     const { counterFinished } = props;

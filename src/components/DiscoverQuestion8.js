@@ -24,7 +24,7 @@ export default function DiscoverQuestion8(props) {
                 <OrangeOption data-test="partial-btn" onClick={() => endAlmost8()}>Quase não lembrei</OrangeOption>
                 <GreenOption data-test="zap-btn" onClick={() => endRemember8()}>Zap!</GreenOption>
             </Options>)
-    };
+    }
     function endTest8() {
         const erro = "error";
         setImage(erro);

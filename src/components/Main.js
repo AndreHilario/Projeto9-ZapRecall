@@ -8,6 +8,7 @@ import Question4 from "./Question4";
 import Question5 from "./Question5";
 import Question6 from "./Question6";
 import Question7 from "./Question7";
+import Question8 from "./Question8";
 import DiscoverQuestion1 from "./DiscoverQuestion1";
 import DiscoverQuestion2 from "./DiscoverQuestion2";
 import DiscoverQuestion3 from "./DiscoverQuestion3";
@@ -15,6 +16,7 @@ import DiscoverQuestion4 from "./DiscoverQuestion4";
 import DiscoverQuestion5 from "./DiscoverQuestion5";
 import DiscoverQuestion6 from "./DiscoverQuestion6";
 import DiscoverQuestion7 from "./DiscoverQuestion7";
+import DiscoverQuestion8 from "./DiscoverQuestion8";
 
 export default function Main() {
 
@@ -26,6 +28,7 @@ export default function Main() {
     const [newQuestion5, setNewQuestion5] = useState(<Question5 showQuestion5={showQuestion5} image={image} />);
     const [newQuestion6, setNewQuestion6] = useState(<Question6 showQuestion6={showQuestion6} image={image} />);
     const [newQuestion7, setNewQuestion7] = useState(<Question7 showQuestion7={showQuestion7} image={image} />);
+    const [newQuestion8, setNewQuestion8] = useState(<Question8 showQuestion8={showQuestion8} image={image} />);
     const [counterFinished, setCounterFinished] = useState(0);
     let finishedNumber = 0;
 
@@ -54,7 +57,9 @@ export default function Main() {
     function showQuestion7() {
         setNewQuestion7(<DiscoverQuestion7 updateFinishedNumber={updateFinishedNumber} setNewQuestion7={setNewQuestion7} setImage={setImage} />);
     }
-
+    function showQuestion8() {
+        setNewQuestion8(<DiscoverQuestion8 updateFinishedNumber={updateFinishedNumber} setNewQuestion8={setNewQuestion8} setImage={setImage} />);
+    }
     return (
         <MainContent>
             {newQuestion1}
@@ -64,6 +69,7 @@ export default function Main() {
             {newQuestion5}
             {newQuestion6}
             {newQuestion7}
+            {newQuestion8}
             <Footer counterFinished={counterFinished} />
         </MainContent>
     );
